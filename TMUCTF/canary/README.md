@@ -118,7 +118,7 @@ Trong sơ đồ trên có 2 chướng ngại:
 
 Mình sẽ nhập shellcode chia ra làm 2 phần, phần đầu shellcode sẽ nhập vào lần 2, và phần sau sẽ nhập vào lần 1. Lần nhập thứ 3 mình sẽ RET về địa chỉ chứa shellcode.
 
-Sử dụng 1 số lệnh jmp _offset (\xeb\x_offset) để bỏ qua các chướng ngại.
+Sử dụng 1 số lệnh nhảy để bỏ qua n byte bằng lệnh '\xeb\xn' để bỏ qua các chướng ngại.
 
 ## File exploit.py
 ```python
